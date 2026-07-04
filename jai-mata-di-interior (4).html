@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jai Mata Di Interior Works — Gurugram, Haryana</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23B5451B'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='white' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23F9DCC4'/%3E%3Cpath d='M32 19 Q38 25 32 32 Q26 25 32 19Z' fill='%23F4A261'/%3E%3Cpath d='M19 32 Q25 26 32 32 Q25 38 19 32Z' fill='%23F4A261'/%3E%3Cpath d='M32 45 Q26 39 32 32 Q38 39 32 45Z' fill='%23F4A261'/%3E%3Cpath d='M45 32 Q39 38 32 32 Q39 26 45 32Z' fill='%23F4A261'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  /* Palette: Rich Terracotta · Warm Ivory · Deep Slate · Aged Gold */
+  --terra:       #B5451B;
+  --terra-mid:   #C9622F;
+  --terra-light: #E8895A;
+  --terra-pale:  #FDF0E8;
+  --ivory:       #FAF7F2;
+  --ivory2:      #F0EAE0;
+  --ivory3:      #E2D8CC;
+  --slate:       #1C1F26;
+  --slate2:      #2A2D36;
+  --slate3:      #383C48;
+  --gold:        #C8973A;
+  --gold-light:  #E8C47A;
+  --gold-pale:   #FBF3E2;
+  --text:        #1C1F26;
+  --muted:       #6B6560;
+  --light:       #9A9390;
+  --white:       #FFFFFF;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
+  --r:14px;
+  --sh:0 4px 28px rgba(28,31,38,0.09);
+  --sh2:0 14px 56px rgba(28,31,38,0.14);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--text);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--ivory)}
+::-webkit-scrollbar-thumb{background:var(--terra);border-radius:3px}
+
+/* ─── NAV ─── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:300;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1rem 3.5rem;
+  background:rgba(250,247,242,0.94);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(181,69,27,0.12);
+  box-shadow:0 2px 24px rgba(28,31,38,0.05);
+  transition:all .3s;
+}
+nav.scrolled{padding:.65rem 3.5rem;box-shadow:0 4px 32px rgba(28,31,38,0.1)}
+.nav-brand{display:flex;align-items:center;gap:.85rem;text-decoration:none}
+.nav-logo{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--terra),var(--terra-mid));
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:0 3px 14px rgba(181,69,27,.35);
+}
+.nav-logo svg{width:26px;height:26px}
+.nav-co{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--slate);line-height:1.15}
+.nav-city{font-size:.57rem;color:var(--light);letter-spacing:.12em;text-transform:uppercase}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{
+  font-size:.77rem;font-weight:500;letter-spacing:.04em;
+  color:var(--muted);text-decoration:none;position:relative;transition:color .2s;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-3px;left:0;right:0;
+  height:1.5px;background:var(--terra);border-radius:1px;
+  transform:scaleX(0);transform-origin:left;transition:transform .25s;
+}
+.nav-links a:hover{color:var(--terra)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:.45rem;
+  font-size:.77rem;font-weight:600;color:var(--white);
+  background:var(--terra);padding:.6rem 1.4rem;
+  border-radius:50px;text-decoration:none;
+  box-shadow:0 4px 16px rgba(181,69,27,.35);
+  transition:all .25s;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--terra-mid);transform:translateY(-1px);box-shadow:0 7px 22px rgba(181,69,27,.42)}
+
+/* ─── HERO ─── */
+#hero{
+  position:relative;height:100vh;min-height:660px;
+  display:flex;align-items:flex-end;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1900&q=85&auto=format&fit=crop');
+  background-size:cover;background-position:center;
+  transform:scale(1.05);transition:transform 9s ease-out;
+}
+.hero-bg.loaded{transform:scale(1)}
+.hero-ov{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(28,31,38,.95) 0%,rgba(28,31,38,.55) 40%,rgba(28,31,38,.1) 100%);
+}
+.hero-side-text{
+  position:absolute;right:2.5rem;top:50%;transform:translateY(-50%);
+  writing-mode:vertical-lr;letter-spacing:.25em;font-size:.62rem;font-weight:500;
+  text-transform:uppercase;color:rgba(255,255,255,.3);z-index:2;
+}
+.hero-content{
+  position:relative;z-index:2;
+  padding:0 4rem 5rem;max-width:760px;
+}
+.hero-pill{
+  display:inline-flex;align-items:center;gap:.65rem;
+  border:1px solid rgba(200,151,58,.4);
+  background:rgba(200,151,58,.1);
+  padding:.45rem 1.1rem;border-radius:50px;margin-bottom:1.6rem;
+}
+.hero-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-light);animation:glow 2s ease-in-out infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(232,196,122,.6)}50%{box-shadow:0 0 0 5px rgba(232,196,122,0)}}
+.hero-pill-txt{font-size:.67rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light)}
+h1.hero-title{
+  font-family:var(--serif);
+  font-size:clamp(3rem,6vw,5.5rem);
+  font-weight:300;line-height:1.04;color:var(--white);
+  margin-bottom:1.25rem;
+}
+h1.hero-title em{font-style:italic;color:var(--gold-light)}
+.hero-sub{
+  font-size:.97rem;font-weight:300;color:rgba(255,255,255,.62);
+  line-height:1.82;max-width:480px;margin-bottom:2.5rem;
+}
+.hero-btns{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+.btn-terra{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.8rem;font-weight:600;color:var(--white);
+  background:var(--terra);padding:.9rem 2rem;border-radius:50px;
+  text-decoration:none;box-shadow:0 6px 22px rgba(181,69,27,.45);
+  transition:all .25s;
+}
+.btn-terra:hover{background:var(--terra-mid);transform:translateY(-2px);box-shadow:0 10px 30px rgba(181,69,27,.5)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.8rem;font-weight:400;color:rgba(255,255,255,.78);
+  border:1.5px solid rgba(255,255,255,.25);
+  padding:.9rem 2rem;border-radius:50px;text-decoration:none;
+  transition:all .25s;
+}
+.btn-ghost:hover{border-color:var(--gold-light);color:var(--gold-light)}
+/* stats ticker bottom of hero */
+.hero-stats{
+  position:absolute;bottom:0;left:0;right:0;z-index:3;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  background:rgba(200,151,58,.94);
+  backdrop-filter:blur(8px);
+}
+.hs-item{
+  padding:1.1rem 1.75rem;text-align:center;
+  border-right:1px solid rgba(255,255,255,.18);
+}
+.hs-item:last-child{border-right:none}
+.hs-num{font-family:var(--serif);font-size:1.7rem;font-weight:600;color:var(--white);line-height:1}
+.hs-lbl{font-size:.62rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:.2rem}
+
+/* ─── MARQUEE ─── */
+.mq-wrap{background:var(--slate);padding:.85rem 0;overflow:hidden;border-bottom:1px solid var(--slate3)}
+.mq-track{display:flex;gap:2.5rem;white-space:nowrap;animation:scroll 34s linear infinite}
+.mq-track:hover{animation-play-state:paused}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq-item{display:inline-flex;align-items:center;gap:.7rem;flex-shrink:0;font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.mq-gem{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
+
+/* ─── SECTION HELPERS ─── */
+.sec{padding:6.5rem 3.5rem}
+.sec-hd{text-align:center;margin-bottom:3.5rem}
+.chip{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.67rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--terra);background:var(--terra-pale);
+  padding:.35rem 1rem;border-radius:50px;margin-bottom:1rem;
+}
+.chip::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--terra);display:block}
+.sec-title{font-family:var(--serif);font-size:clamp(2.1rem,3.8vw,3.2rem);font-weight:300;color:var(--text);line-height:1.18}
+.sec-title em{font-style:italic;color:var(--terra)}
+.sec-desc{font-size:.89rem;color:var(--muted);line-height:1.88;max-width:510px;margin:.85rem auto 0}
+
+/* ─── ABOUT / INTRO SPLIT ─── */
+#about{background:var(--ivory);padding:0}
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.about-img{position:relative;overflow:hidden}
+.about-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 8s ease}
+.about-img:hover img{transform:scale(1.04)}
+.about-overlay-badge{
+  position:absolute;bottom:2.5rem;right:-1rem;
+  background:var(--terra);color:var(--white);
+  border-radius:var(--r);padding:1.5rem 1.75rem;text-align:center;
+  box-shadow:0 8px 32px rgba(181,69,27,.4);
+}
+.aob-num{font-family:var(--serif);font-size:2.5rem;font-weight:600;line-height:1}
+.aob-txt{font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin-top:.25rem}
+.about-body{
+  background:var(--slate);padding:5rem;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.about-body .sec-hd{text-align:left;margin-bottom:2rem}
+.about-body .chip{background:rgba(200,151,58,.12);color:var(--gold-light)}
+.about-body .chip::before{background:var(--gold-light)}
+.about-body .sec-title{color:var(--white)}
+.about-txt{font-size:.9rem;color:rgba(255,255,255,.5);line-height:1.88;margin-bottom:.75rem}
+.about-vals{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.75rem}
+.av{display:flex;align-items:flex-start;gap:.75rem}
+.av-icon{width:36px;height:36px;border-radius:9px;background:rgba(200,151,58,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.av-icon svg{width:18px;height:18px;color:var(--gold-light)}
+.av-title{font-size:.82rem;font-weight:600;color:rgba(255,255,255,.85);margin-bottom:.15rem}
+.av-sub{font-size:.74rem;color:rgba(255,255,255,.35);line-height:1.5}
+
+/* ─── SERVICES ─── */
+#services{background:var(--ivory2)}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.srv{
+  background:var(--white);border-radius:var(--r);
+  padding:2.25rem;border:1px solid var(--ivory3);
+  position:relative;overflow:hidden;
+  transition:all .32s cubic-bezier(.25,.8,.25,1);
+}
+.srv:hover{transform:translateY(-7px);box-shadow:var(--sh2);border-color:rgba(181,69,27,.2)}
+.srv-gn{
+  font-family:var(--serif);font-size:4.5rem;font-weight:300;
+  color:var(--ivory2);line-height:1;
+  position:absolute;top:.75rem;right:1.25rem;
+  transition:color .3s;pointer-events:none;
+}
+.srv:hover .srv-gn{color:var(--terra-pale)}
+.srv-ico{
+  width:52px;height:52px;border-radius:13px;
+  background:var(--terra-pale);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.25rem;transition:background .3s;
+}
+.srv:hover .srv-ico{background:var(--terra)}
+.srv-ico svg{width:25px;height:25px;color:var(--terra);transition:color .3s}
+.srv:hover .srv-ico svg{color:var(--white)}
+.srv-name{font-family:var(--serif);font-size:1.28rem;font-weight:400;color:var(--text);margin-bottom:.6rem}
+.srv-desc{font-size:.82rem;color:var(--muted);line-height:1.78}
+.srv-tag{
+  display:inline-block;margin-top:1.2rem;
+  font-size:.61rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--terra);background:var(--terra-pale);
+  padding:.28rem .8rem;border-radius:50px;
+}
+
+/* ─── PHOTO GALLERY ─── */
+#gallery{background:var(--slate);padding:6.5rem 3.5rem}
+#gallery .sec-title{color:var(--white)}
+#gallery .sec-desc{color:rgba(255,255,255,.42)}
+#gallery .chip{color:var(--gold-light);background:rgba(200,151,58,.12)}
+#gallery .chip::before{background:var(--gold-light)}
+
+/* masonry grid */
+.gal-grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-template-rows:220px 220px 220px;
+  gap:10px;
+}
+.gc{position:relative;overflow:hidden;border-radius:10px;cursor:pointer}
+.gc img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s ease,filter .4s;filter:brightness(.82)}
+.gc:hover img{transform:scale(1.08);filter:brightness(.48)}
+.gc-cap{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(28,31,38,.92) 0%,transparent 55%);
+  padding:1.25rem;display:flex;flex-direction:column;justify-content:flex-end;
+  opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s;
+}
+.gc:hover .gc-cap{opacity:1;transform:translateY(0)}
+.gc-tag{font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.3rem}
+.gc-title{font-family:var(--serif);font-size:1.05rem;font-weight:300;color:var(--white)}
+/* grid placements */
+.gc-1{grid-column:1/6;grid-row:1/3}
+.gc-2{grid-column:6/9;grid-row:1/2}
+.gc-3{grid-column:9/13;grid-row:1/2}
+.gc-4{grid-column:6/9;grid-row:2/3}
+.gc-5{grid-column:9/13;grid-row:2/3}
+.gc-6{grid-column:1/5;grid-row:3/4}
+.gc-7{grid-column:5/9;grid-row:3/4}
+.gc-8{grid-column:9/13;grid-row:3/4}
+
+/* ─── FULL-BLEED STRIP ─── */
+.fb-strip{display:flex;height:290px;gap:4px}
+.fb-item{flex:1;position:relative;overflow:hidden;transition:flex .55s cubic-bezier(.25,.8,.25,1)}
+.fb-item:hover{flex:2.6}
+.fb-item img{width:100%;height:100%;object-fit:cover;display:block;transition:filter .4s;filter:brightness(.72)}
+.fb-item:hover img{filter:brightness(.48)}
+.fb-label{
+  position:absolute;bottom:1rem;left:1.25rem;
+  font-family:var(--serif);font-size:1.05rem;color:var(--white);
+  opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s;
+}
+.fb-item:hover .fb-label{opacity:1;transform:translateY(0)}
+
+/* ─── SERVICE LIST ─── */
+#slist{background:var(--gold-pale)}
+.slist-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.slist-img{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--sh2)}
+.slist-img img{height:530px;width:100%;object-fit:cover;display:block}
+.slist-badge{
+  position:absolute;bottom:-1rem;right:-1rem;
+  background:var(--slate);color:var(--white);
+  border-radius:var(--r);padding:1.4rem 1.75rem;text-align:center;
+  box-shadow:var(--sh2);
+}
+.sb-n{font-family:var(--serif);font-size:2.4rem;font-weight:300;line-height:1;color:var(--gold-light)}
+.sb-t{font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:.2rem}
+.slist-content .sec-hd{text-align:left;margin-bottom:2rem}
+.slist-content .chip{justify-content:flex-start}
+.sl-grid{display:grid;grid-template-columns:1fr 1fr;gap:.55rem}
+.sl-item{
+  display:flex;align-items:center;gap:.55rem;
+  font-size:.8rem;color:var(--text);
+  padding:.6rem .8rem;background:var(--white);
+  border-radius:8px;border-left:3px solid var(--terra);
+  transition:background .2s,border-color .2s;
+}
+.sl-item:hover{background:var(--terra-pale);border-color:var(--terra-mid)}
+.sl-item svg{width:12px;height:12px;color:var(--terra);flex-shrink:0}
+
+/* ─── WHY US ─── */
+#why{background:var(--white)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.why-card{
+  padding:2.1rem;border:1.5px solid var(--ivory3);border-radius:var(--r);
+  text-align:center;transition:all .3s;background:var(--ivory);
+}
+.why-card:hover{border-color:rgba(181,69,27,.25);background:var(--white);box-shadow:var(--sh);transform:translateY(-5px)}
+.why-ico{
+  width:58px;height:58px;border-radius:50%;background:var(--terra-pale);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;transition:background .3s;
+}
+.why-card:hover .why-ico{background:var(--terra)}
+.why-ico svg{width:27px;height:27px;color:var(--terra);transition:color .3s}
+.why-card:hover .why-ico svg{color:var(--white)}
+.why-title{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--slate);margin-bottom:.55rem}
+.why-desc{font-size:.81rem;color:var(--muted);line-height:1.78}
+
+/* ─── QUOTATION ─── */
+#quot{background:var(--ivory2)}
+.q-tabs{display:flex;gap:.5rem;justify-content:center;margin-bottom:2rem;flex-wrap:wrap}
+.qt{
+  font-size:.74rem;font-weight:500;letter-spacing:.05em;
+  padding:.58rem 1.5rem;border-radius:50px;cursor:pointer;
+  border:1.5px solid var(--ivory3);background:var(--white);
+  color:var(--muted);transition:all .22s;
+}
+.qt.active,.qt:hover{background:var(--terra);border-color:var(--terra);color:var(--white);box-shadow:0 4px 14px rgba(181,69,27,.28)}
+.q-panel{display:none}
+.q-panel.active{display:block}
+.q-note{
+  font-size:.79rem;color:var(--slate2);
+  padding:.85rem 1.1rem;
+  background:var(--terra-pale);border-left:3px solid var(--terra);
+  border-radius:0 8px 8px 0;margin-bottom:1.25rem;
+}
+.q-tbl{width:100%;border-collapse:collapse;font-size:.81rem;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.q-tbl th{background:var(--slate);color:rgba(255,255,255,.72);font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 1.1rem;text-align:left}
+.q-tbl td{padding:.75rem 1.1rem;border-bottom:1px solid var(--ivory2);color:var(--text)}
+.q-tbl tr:last-child td{border-bottom:none}
+.q-tbl tr:hover td{background:var(--terra-pale)}
+.q-tbl td:first-child{font-weight:600;color:var(--slate2)}
+.q-unit{font-size:.63rem;font-weight:600;letter-spacing:.07em;color:var(--terra);background:var(--terra-pale);padding:.2rem .55rem;border-radius:50px;white-space:nowrap}
+
+/* ─── TERMS ─── */
+#terms{background:linear-gradient(140deg,var(--slate) 0%,var(--slate2) 100%)}
+#terms .sec-title{color:var(--white)}
+#terms .sec-desc{color:rgba(255,255,255,.42)}
+#terms .chip{color:var(--gold-light);background:rgba(200,151,58,.12)}
+#terms .chip::before{background:var(--gold-light)}
+.terms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.tc{
+  background:rgba(255,255,255,.04);border:1px solid rgba(200,151,58,.15);
+  border-radius:var(--r);padding:1.75rem;
+  transition:background .25s,border-color .25s;
+}
+.tc:hover{background:rgba(200,151,58,.07);border-color:rgba(200,151,58,.3)}
+.tc-badge{
+  width:34px;height:34px;border-radius:50%;
+  background:linear-gradient(135deg,var(--terra),var(--terra-mid));
+  display:flex;align-items:center;justify-content:center;
+  font-size:.77rem;font-weight:700;color:var(--white);
+  margin-bottom:1rem;box-shadow:0 3px 10px rgba(181,69,27,.35);
+}
+.tc-text{font-size:.81rem;color:rgba(255,255,255,.5);line-height:1.8}
+.tc-text strong{color:var(--gold-light)}
+
+/* ─── CTA ─── */
+#cta{position:relative;padding:7.5rem 3.5rem;text-align:center;overflow:hidden}
+.cta-bg{
+  position:absolute;inset:0;
+  background-image:url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1800&q=85&auto=format&fit=crop');
+  background-size:cover;background-position:center;
+}
+.cta-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,31,38,.9) 0%,rgba(181,69,27,.7) 100%)}
+.cta-body{position:relative;z-index:2}
+.cta-title{font-family:var(--serif);font-size:clamp(2.1rem,4.5vw,3.6rem);font-weight:300;color:var(--white);line-height:1.18;margin-bottom:1rem}
+.cta-title em{font-style:italic;color:var(--gold-light)}
+.cta-sub{font-size:.92rem;color:rgba(255,255,255,.58);max-width:440px;margin:0 auto 2.5rem;line-height:1.82}
+.cta-acts{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:600;color:var(--slate);background:var(--white);padding:.9rem 2rem;border-radius:50px;text-decoration:none;box-shadow:0 6px 22px rgba(0,0,0,.22);transition:all .25s}
+.btn-white:hover{background:var(--ivory2);transform:translateY(-2px)}
+.btn-ow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:500;color:var(--white);border:1.5px solid rgba(255,255,255,.32);padding:.9rem 2rem;border-radius:50px;text-decoration:none;transition:all .25s}
+.btn-ow:hover{border-color:var(--gold-light);color:var(--gold-light)}
+
+/* ─── CONTACT ─── */
+#contact{background:var(--white);padding:6.5rem 3.5rem}
+.cnt-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:start}
+.cnt-info .sec-hd{text-align:left;margin-bottom:2rem}
+.cnt-info .chip{justify-content:flex-start}
+.ci{
+  display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.25rem;
+  padding:.9rem 1.2rem;background:var(--terra-pale);border-radius:12px;
+  transition:background .2s;
+}
+.ci:hover{background:#fde8d8}
+.ci-ico{
+  width:40px;height:40px;border-radius:10px;background:var(--terra);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:0 3px 10px rgba(181,69,27,.3);
+}
+.ci-ico svg{width:18px;height:18px;color:var(--white)}
+.ci-lbl{font-size:.61rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--light);margin-bottom:.2rem}
+.ci-val{font-size:.87rem;font-weight:500;color:var(--text);line-height:1.55}
+.cnt-form-box{
+  background:var(--ivory);border-radius:20px;
+  padding:2.5rem;border:1.5px solid var(--ivory3);
+  box-shadow:var(--sh);
+}
+.cf-title{font-family:var(--serif);font-size:1.55rem;font-weight:400;color:var(--slate);margin-bottom:.25rem}
+.cf-sub{font-size:.8rem;color:var(--muted);margin-bottom:1.75rem}
+.c-form{display:flex;flex-direction:column;gap:1rem}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{display:flex;flex-direction:column;gap:.38rem}
+.fl{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--light)}
+.fi,.fs,.ft{
+  background:var(--white);border:1.5px solid var(--ivory3);border-radius:10px;
+  padding:.8rem 1rem;font-family:var(--sans);font-size:.85rem;color:var(--text);
+  outline:none;transition:border-color .2s,box-shadow .2s;width:100%;appearance:none;resize:none;
+}
+.fi:focus,.fs:focus,.ft:focus{border-color:var(--terra);box-shadow:0 0 0 3px rgba(181,69,27,.1)}
+.ft{height:108px}
+.f-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-size:.8rem;font-weight:600;color:var(--white);
+  background:linear-gradient(135deg,var(--terra),var(--terra-mid));
+  border:none;border-radius:50px;padding:1rem 2rem;
+  cursor:pointer;align-self:flex-start;
+  box-shadow:0 6px 20px rgba(181,69,27,.35);transition:all .25s;
+}
+.f-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(181,69,27,.45)}
+.f-btn svg{width:18px;height:18px;fill:currentColor}
+#fStatus{font-size:.79rem;display:none;padding:.7rem 1rem;border-radius:8px;margin-top:.25rem;line-height:1.6}
+
+/* ─── FOOTER ─── */
+footer{background:var(--slate);padding:4.5rem 3.5rem 0;border-top:3px solid var(--terra)}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.foot-brand{display:flex;align-items:center;gap:.8rem;text-decoration:none;margin-bottom:1.1rem}
+.foot-logo{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--terra),var(--terra-mid));display:flex;align-items:center;justify-content:center;box-shadow:0 3px 12px rgba(181,69,27,.4)}
+.foot-logo svg{width:22px;height:22px}
+.foot-co{font-family:var(--serif);font-size:1rem;color:rgba(255,255,255,.9);line-height:1.2}
+.foot-city{font-size:.57rem;color:rgba(255,255,255,.32);letter-spacing:.1em;text-transform:uppercase}
+.foot-desc{font-size:.79rem;color:rgba(255,255,255,.33);line-height:1.78;margin-bottom:1.25rem}
+.foot-tel{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:600;color:var(--terra-light);text-decoration:none;transition:color .2s}
+.foot-tel:hover{color:var(--white)}
+.fcol-title{font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--terra-light);margin-bottom:1.2rem}
+.flinks{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.flinks a{font-size:.79rem;color:rgba(255,255,255,.36);text-decoration:none;transition:color .2s}
+.flinks a:hover{color:rgba(255,255,255,.8)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;font-size:.71rem;color:rgba(255,255,255,.2)}
+.foot-bottom span{color:var(--terra-light)}
+
+/* ─── FLOATING WA ─── */
+.wa{
+  position:fixed;bottom:1.8rem;right:1.8rem;z-index:999;
+  width:56px;height:56px;border-radius:50%;background:#25D366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 24px rgba(37,211,102,.45);text-decoration:none;
+  animation:popIn .6s ease 1.2s both;transition:transform .25s,box-shadow .25s;
+}
+.wa:hover{transform:scale(1.1);box-shadow:0 9px 32px rgba(37,211,102,.55)}
+@keyframes popIn{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+.wa svg{width:30px;height:30px;fill:white}
+
+/* ─── REVEAL ─── */
+.r{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.r.rl{transform:translateX(-26px)}
+.r.rr{transform:translateX(26px)}
+.r.on{opacity:1;transform:translate(0)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1100px){.about-body{padding:3rem 2.5rem}.slist-img{display:none}.slist-wrap{grid-template-columns:1fr}.cnt-grid{grid-template-columns:1fr}}
+@media(max-width:900px){
+  nav{padding:.8rem 1.5rem}.nav-links{display:none}
+  .sec{padding:4.5rem 1.5rem}
+  .hero-content{padding:0 1.5rem 10rem}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .about-wrap{grid-template-columns:1fr}
+  .about-img{height:300px}
+  .srv-grid,.why-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gc-1,.gc-2,.gc-3,.gc-4,.gc-5,.gc-6,.gc-7,.gc-8{grid-column:span 1;grid-row:span 1;min-height:200px}
+  .fb-strip{height:200px}
+  .terms-grid{grid-template-columns:1fr}
+  footer{padding:3rem 1.5rem 0}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .foot-bottom{flex-direction:column;gap:.5rem;text-align:center}
+  #contact{padding:4.5rem 1.5rem}
+  .cnt-form-box{padding:1.5rem}
+  .f-row{grid-template-columns:1fr}
+  #quot{padding:4.5rem 1.5rem}
+  .sl-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- Floating WhatsApp -->
+<a class="wa" href="https://wa.me/919024126010" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-brand">
+    <div class="nav-logo">
+      <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="7" fill="none" stroke="white" stroke-width="2.2"/>
+        <circle cx="18" cy="18" r="3.2" fill="#F9DCC4"/>
+        <path d="M18 11 Q22 14 18 18 Q14 14 18 11Z" fill="#F4A261"/>
+        <path d="M11 18 Q14 14 18 18 Q14 22 11 18Z" fill="#F4A261"/>
+        <path d="M18 25 Q14 22 18 18 Q22 22 18 25Z" fill="#F4A261"/>
+        <path d="M25 18 Q22 22 18 18 Q22 14 25 18Z" fill="#F4A261"/>
+        <path d="M18 3L18 8M18 28L18 33M3 18L8 18M28 18L33 18" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <div class="nav-co">Jai Mata Di Interior Works</div>
+      <div class="nav-city">Gurugram, Haryana</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#quot">Quotation</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#terms">Terms</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="tel:9024126010">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.08 6.08l1.29-1.29a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    90241 26010
+  </a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-ov"></div>
+  <div class="hero-side-text">Gurugram · Haryana · Since 2005</div>
+  <div class="hero-content">
+    <div class="hero-pill">
+      <div class="hero-dot"></div>
+      <div class="hero-pill-txt">Trusted Stone &amp; Tile Contractor · Gurugram</div>
+    </div>
+    <h1 class="hero-title">Marble, Granite<br>&amp; <em>Tile Specialists</em></h1>
+    <p class="hero-sub">Premium interior stone work — Italian marble flooring, granite cladding, all tile sizes, precision edge finishing and more. Skilled labour teams serving all of Gurugram &amp; Haryana.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-terra">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Get a Free Quote
+      </a>
+      <a href="#gallery" class="btn-ghost">View Our Work →</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hs-item"><div class="hs-num">15+</div><div class="hs-lbl">Years Experience</div></div>
+    <div class="hs-item"><div class="hs-num">500+</div><div class="hs-lbl">Projects Done</div></div>
+    <div class="hs-item"><div class="hs-num">30+</div><div class="hs-lbl">Work Types</div></div>
+    <div class="hs-item"><div class="hs-num">100%</div><div class="hs-lbl">Satisfaction</div></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq-wrap">
+  <div class="mq-track">
+    <span class="mq-item"><span class="mq-gem"></span>Italian Marble Flooring</span>
+    <span class="mq-item"><span class="mq-gem"></span>Granite Flooring &amp; Cladding</span>
+    <span class="mq-item"><span class="mq-gem"></span>Wall Tile Fixing</span>
+    <span class="mq-item"><span class="mq-gem"></span>Staircase Granite</span>
+    <span class="mq-item"><span class="mq-gem"></span>Edge Polish &amp; Gola Making</span>
+    <span class="mq-item"><span class="mq-gem"></span>Epoxy Grouting</span>
+    <span class="mq-item"><span class="mq-gem"></span>SS Patti Fixing</span>
+    <span class="mq-item"><span class="mq-gem"></span>Kani Making</span>
+    <span class="mq-item"><span class="mq-gem"></span>Chamfer &amp; V Groove</span>
+    <span class="mq-item"><span class="mq-gem"></span>Sink &amp; Trap Cutting</span>
+    <span class="mq-item"><span class="mq-gem"></span>Italian Marble Flooring</span>
+    <span class="mq-item"><span class="mq-gem"></span>Granite Flooring &amp; Cladding</span>
+    <span class="mq-item"><span class="mq-gem"></span>Wall Tile Fixing</span>
+    <span class="mq-item"><span class="mq-gem"></span>Staircase Granite</span>
+    <span class="mq-item"><span class="mq-gem"></span>Edge Polish &amp; Gola Making</span>
+    <span class="mq-item"><span class="mq-gem"></span>Epoxy Grouting</span>
+    <span class="mq-item"><span class="mq-gem"></span>SS Patti Fixing</span>
+    <span class="mq-item"><span class="mq-gem"></span>Kani Making</span>
+    <span class="mq-item"><span class="mq-gem"></span>Chamfer &amp; V Groove</span>
+    <span class="mq-item"><span class="mq-gem"></span>Sink &amp; Trap Cutting</span>
+  </div>
+</div>
+
+<!-- ABOUT SPLIT -->
+<section id="about">
+  <div class="about-wrap">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=900&q=85&auto=format&fit=crop" alt="Marble flooring installation">
+      <div class="about-overlay-badge"><div class="aob-num">15+</div><div class="aob-txt">Years of Craft</div></div>
+    </div>
+    <div class="about-body">
+      <div class="sec-hd">
+        <div class="chip">Who We Are</div>
+        <h2 class="sec-title">Premium Stone Work<br><em>Done Right</em></h2>
+      </div>
+      <p class="about-txt">Jai Mata Di Interior Works is a trusted labour contractor based in Gurugram, Haryana — specialising in all types of interior stone work including Italian marble, granite, tiles and precision finishing for over 15 years.</p>
+      <p class="about-txt">We bring our own machinery, blades and tools. You provide the material and site utilities — we deliver the craftsmanship. Serving residential, commercial and builder projects across Gurugram and all of Haryana.</p>
+      <div class="about-vals">
+        <div class="av"><div class="av-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="av-title">Quality Guaranteed</div><div class="av-sub">Skilled, trained labour team</div></div></div>
+        <div class="av"><div class="av-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="av-title">On-Time Delivery</div><div class="av-sub">Billing every 15 days</div></div></div>
+        <div class="av"><div class="av-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="av-title">Gurugram Based</div><div class="av-sub">Sector 38 &amp; Sector 52</div></div></div>
+        <div class="av"><div class="av-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><div><div class="av-title">Own Machinery</div><div class="av-sub">Blades, batti &amp; tools</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec">
+  <div class="sec-hd r">
+    <div class="chip">Our Specialisations</div>
+    <h2 class="sec-title">All Types of <em>Interior Works</em></h2>
+    <p class="sec-desc">Skilled labour for marble, granite, tiles and all stone finishing across Gurugram, Haryana.</p>
+  </div>
+  <div class="srv-grid">
+    <div class="srv r"><div class="srv-gn">01</div><div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg></div><h3 class="srv-name">Italian Marble Flooring</h3><p class="srv-desc">Expert Italian marble fixing — flooring, skirting, border patti up to 11″, dhel, cladding and cladding patti. Labour only or with material.</p><span class="srv-tag">Per Sft / Per Rft</span></div>
+    <div class="srv r" style="transition-delay:.1s"><div class="srv-gn">02</div><div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg></div><h3 class="srv-name">Granite Works</h3><p class="srv-desc">Granite flooring, skirting, cladding, staircase, gate &amp; window frames, Gwalior cladding and double edge polish with full precision.</p><span class="srv-tag">Per Sft / Per Rft</span></div>
+    <div class="srv r" style="transition-delay:.2s"><div class="srv-gn">03</div><div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20M4 20V8l8-6 8 6v12"/></svg></div><h3 class="srv-name">Wall &amp; Floor Tiles</h3><p class="srv-desc">Wall tiles in all sizes: 12×24″, 24×48″, 48×96″ and 4×8′. Floor tiles 2′×2′, skirting including plaster work and epoxy grouting finish.</p><span class="srv-tag">Per Sft</span></div>
+    <div class="srv r" style="transition-delay:.05s"><div class="srv-gn">04</div><div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg></div><h3 class="srv-name">Polish &amp; Edge Finishing</h3><p class="srv-desc">Edge polish, double edge polish, Gola ½″ round &amp; full round, chamfer 2/8″, V groove, U groove and top up to 11″ — all precision finishing.</p><span class="srv-tag">Per Rft / Nos</span></div>
+    <div class="srv r" style="transition-delay:.15s"><div class="srv-gn">05</div><div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg></div><h3 class="srv-name">Specialty Work</h3><p class="srv-desc">Epoxy grout wall &amp; floor, SS patti fixing, Kani making, Gatta ½″ making, light &amp; sanitary hole cutting, sink and trap cutting.</p><span class="srv-tag">Per Sft / Nos</span></div>
+    <div class="srv r" style="transition-delay:.25s"><div class="srv-gn">06</div><div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div><h3 class="srv-name">Staircase &amp; Cladding</h3><p class="srv-desc">Complete staircase granite with skirting, entry wall tiles, Italian &amp; Gwalior cladding — interior and exterior stone cladding solutions.</p><span class="srv-tag">Per Rft / Per Sft</span></div>
+  </div>
+</section>
+
+<!-- GALLERY — Flooring & Marble Specific Photos -->
+<section id="gallery" class="sec">
+  <div class="sec-hd r">
+    <div class="chip">Our Work Gallery</div>
+    <h2 class="sec-title" style="color:#fff">Real Work, <em style="color:var(--gold-light)">Real Results</em></h2>
+    <p class="sec-desc">Marble, granite and tile installations across Gurugram — every photo from actual stone work.</p>
+  </div>
+  <div class="gal-grid r">
+    <!-- Large hero cell: Italian marble living room -->
+    <div class="gc gc-1">
+      <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=900&q=85&auto=format&fit=crop" alt="Italian marble flooring living room">
+      <div class="gc-cap"><div class="gc-tag">Italian Marble</div><div class="gc-title">Luxury Living Room Flooring</div></div>
+    </div>
+    <!-- Granite floor -->
+    <div class="gc gc-2">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85&auto=format&fit=crop" alt="Granite floor">
+      <div class="gc-cap"><div class="gc-tag">Granite</div><div class="gc-title">Polished Granite Floor</div></div>
+    </div>
+    <!-- Marble wall cladding -->
+    <div class="gc gc-3">
+      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=85&auto=format&fit=crop" alt="Marble wall cladding">
+      <div class="gc-cap"><div class="gc-tag">Wall Cladding</div><div class="gc-title">Marble Feature Wall</div></div>
+    </div>
+    <!-- Bathroom marble tiles -->
+    <div class="gc gc-4">
+      <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=85&auto=format&fit=crop" alt="Bathroom marble tiles">
+      <div class="gc-cap"><div class="gc-tag">Bathroom Tiles</div><div class="gc-title">Premium Tile &amp; Grouting</div></div>
+    </div>
+    <!-- Kitchen granite -->
+    <div class="gc gc-5">
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=85&auto=format&fit=crop" alt="Kitchen granite">
+      <div class="gc-cap"><div class="gc-tag">Kitchen</div><div class="gc-title">Granite Counter &amp; Tiles</div></div>
+    </div>
+    <!-- Marble staircase -->
+    <div class="gc gc-6">
+      <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=700&q=85&auto=format&fit=crop" alt="Marble staircase">
+      <div class="gc-cap"><div class="gc-tag">Staircase</div><div class="gc-title">Granite Staircase Work</div></div>
+    </div>
+    <!-- Marble hallway -->
+    <div class="gc gc-7">
+      <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=700&q=85&auto=format&fit=crop" alt="Marble hallway">
+      <div class="gc-cap"><div class="gc-tag">Hallway</div><div class="gc-title">Italian Marble Skirting</div></div>
+    </div>
+    <!-- Stone exterior cladding -->
+    <div class="gc gc-8">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=85&auto=format&fit=crop" alt="Stone cladding exterior">
+      <div class="gc-cap"><div class="gc-tag">Exterior</div><div class="gc-title">Stone Cladding Facade</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL-BLEED STRIP — flooring-specific images -->
+<div class="fb-strip">
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&q=80&auto=format&fit=crop" alt="Bedroom marble floor"><div class="fb-label">Bedroom Marble</div></div>
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=500&q=80&auto=format&fit=crop" alt="Dining granite floor"><div class="fb-label">Dining Granite</div></div>
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=500&q=80&auto=format&fit=crop" alt="Office marble flooring"><div class="fb-label">Office Flooring</div></div>
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1592928302636-c83cf1e1c887?w=500&q=80&auto=format&fit=crop" alt="Outdoor granite tiles"><div class="fb-label">Outdoor Granite</div></div>
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=500&q=80&auto=format&fit=crop" alt="Marble detail close-up"><div class="fb-label">Marble Detailing</div></div>
+</div>
+
+<!-- FULL SERVICE LIST -->
+<section id="slist" class="sec">
+  <div class="slist-wrap">
+    <div class="slist-img r rl">
+      <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=900&q=85&auto=format&fit=crop" alt="Marble floor polishing work">
+      <div class="slist-badge"><div class="sb-n">30+</div><div class="sb-t">Work Types</div></div>
+    </div>
+    <div class="slist-content r rr">
+      <div class="sec-hd">
+        <div class="chip">Complete Service List</div>
+        <h2 class="sec-title">Everything We <em>Offer</em></h2>
+        <p class="sec-desc" style="text-align:left;margin-left:0;max-width:100%">Labour only or with material supply — all types of interior stone work.</p>
+      </div>
+      <div class="sl-grid">
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Italian Flooring</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Italian Skirting &amp; Patti</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Italian Dhel</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>SS Patti Fixing</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Italian Cladding</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Cladding Patti up to 11″</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Gola ½″ Round &amp; Full Round</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Chamfer 2/8″</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>V Groove &amp; U Groove</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Kani Making</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Edge &amp; Double Edge Polish</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Granite Flooring</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Granite Skirting</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Granite Cladding</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Wall Tiles 12×24″</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Wall Tiles 24×48″</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Wall Tiles 48×96″</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Floor Tiles 2×2′</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Staircase Granite</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Staircase Skirting</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Gwalior Cladding</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Gate &amp; Window Frame</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Epoxy Grout Wall &amp; Floor</div>
+        <div class="sl-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Sink &amp; Trap Cutting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="sec">
+  <div class="sec-hd r">
+    <div class="chip">Why Choose Us</div>
+    <h2 class="sec-title">Quality Work, <em>Fair Rates</em></h2>
+    <p class="sec-desc">Skilled team with professional machinery — delivering precise, clean stone work across Gurugram and Haryana.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card r"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="why-title">Skilled &amp; Experienced Team</h3><p class="why-desc">15+ years of hands-on experience in Italian marble, granite and tile installation across premium residential and commercial projects in Gurugram.</p></div>
+    <div class="why-card r" style="transition-delay:.1s"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3 class="why-title">On-Time Completion</h3><p class="why-desc">We commit to timelines and deliver as promised. Billing every 15 days on completed work — transparent and professional at every step.</p></div>
+    <div class="why-card r" style="transition-delay:.2s"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h3 class="why-title">Detailed Quotations</h3><p class="why-desc">Clear written quotations — labour rate and with-material rate, per sft or per rft clearly specified. No hidden charges or surprises ever.</p></div>
+    <div class="why-card r" style="transition-delay:.05s"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3 class="why-title">Gurugram Based</h3><p class="why-desc">Locally based at Sector 38 &amp; Sector 52, Gurugram. Always nearby for on-site visits and urgent work at short notice.</p></div>
+    <div class="why-card r" style="transition-delay:.15s"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3 class="why-title">Own Machinery &amp; Tools</h3><p class="why-desc">We bring our own machinery, blades and batti. You only need to provide material and basic site utilities — simple and hassle-free.</p></div>
+    <div class="why-card r" style="transition-delay:.25s"><div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3 class="why-title">All Works Under One Roof</h3><p class="why-desc">30+ types of interior stone work under one contractor. One call, complete solution — Italian marble to epoxy grouting, all guaranteed.</p></div>
+  </div>
+</section>
+
+<!-- QUOTATION -->
+<section id="quot" class="sec">
+  <div class="sec-hd r">
+    <div class="chip">Rate List</div>
+    <h2 class="sec-title">Our <em>Quotation</em> Details</h2>
+    <p class="sec-desc">Call us for exact rates — labour only or with material as per your requirement.</p>
+  </div>
+  <div class="r">
+    <div class="q-tabs">
+      <button class="qt active" onclick="switchTab(this,'t1')">Italian Marble Works</button>
+      <button class="qt" onclick="switchTab(this,'t2')">Granite &amp; Tile Works</button>
+      <button class="qt" onclick="switchTab(this,'t3')">Finishing &amp; Specialty</button>
+    </div>
+    <div class="q-panel active" id="t1">
+      <div class="q-note">ℹ️ Labour rates only. Material (marble, pigment, araldite, feviquick etc.) to be provided by client at site.</div>
+      <table class="q-tbl">
+        <thead><tr><th>#</th><th>Particulars</th><th>Unit</th><th>Labour Only</th><th>With Material</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Italian Flooring</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>2</td><td>Italian Skirting Border &amp; Patti up to 11″</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>3</td><td>Italian Dhel</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>4</td><td>SS Patti Fixing</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>5</td><td>Italian Cladding</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>6</td><td>Cladding Patti up to 11″</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>7</td><td>Gola ½″ Round Making</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>—</td></tr>
+          <tr><td>8</td><td>Gola Full Round Making</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>—</td></tr>
+          <tr><td>9</td><td>2″ to 4″ Patti Cutting &amp; Fixing</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="q-panel" id="t2">
+      <div class="q-note">ℹ️ All rates for skilled labour. Machinery, blades &amp; batti included. Client provides granite/tiles and utilities.</div>
+      <table class="q-tbl">
+        <thead><tr><th>#</th><th>Particulars</th><th>Unit</th><th>Labour Only</th><th>With Material</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Granite Flooring</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>2</td><td>Granite Skirting</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>3</td><td>Granite Cladding</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>4</td><td>Wall Tiles 12″ × 24″ incl. Plaster</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>5</td><td>Wall Tiles 24″ × 48″ incl. Plaster</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>6</td><td>Wall Tiles 48″ × 96″</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>7</td><td>Floor Tiles 2′ × 2′</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>8</td><td>Tiles Skirting</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>9</td><td>Staircase Granite</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>10</td><td>Staircase Skirting</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>11</td><td>Gwalior Cladding</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>12</td><td>Gate &amp; Window Frame Granite</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>13</td><td>Entry Wall Tiles 4′ × 8′</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="q-panel" id="t3">
+      <div class="q-note">ℹ️ Finishing and specialty works billed per unit. Design charges extra. Call us for exact rates.</div>
+      <table class="q-tbl">
+        <thead><tr><th>#</th><th>Particulars</th><th>Unit</th><th>Labour Rate</th><th>With Material</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Chamfer 2/8″</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>2</td><td>V Groove</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>3</td><td>U Groove</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>4</td><td>Kani Making</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>5</td><td>Light &amp; Sanitary Hole Cutting</td><td><span class="q-unit">Per Nos</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>6</td><td>Edge Polish</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>7</td><td>Double Edge Polish</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>8</td><td>Top up to 11″</td><td><span class="q-unit">Per Rft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>9</td><td>Epoxy Grout — Wall</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>10</td><td>Epoxy Grout — Floor</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>11</td><td>Gatta ½″ Making</td><td><span class="q-unit">Per Sft</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>12</td><td>Sink Cutting</td><td><span class="q-unit">Per Nos</span></td><td>On Request</td><td>On Request</td></tr>
+          <tr><td>13</td><td>Trap Cutting</td><td><span class="q-unit">Per Nos</span></td><td>On Request</td><td>On Request</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section id="terms" class="sec">
+  <div class="sec-hd r">
+    <div class="chip">Terms &amp; Conditions</div>
+    <h2 class="sec-title" style="color:#fff">Clear &amp; <em style="color:var(--gold-light)">Transparent</em> Terms</h2>
+    <p class="sec-desc">Honest dealings on every project — these terms apply to all our work contracts.</p>
+  </div>
+  <div class="terms-grid">
+    <div class="tc r"><div class="tc-badge">1</div><p class="tc-text">All rates quoted are <strong>labour rates only</strong>, including our machinery &amp; tools (blade &amp; batti). No material is included unless separately specified.</p></div>
+    <div class="tc r" style="transition-delay:.08s"><div class="tc-badge">2</div><p class="tc-text">Client to provide all material at site <strong>free of cost</strong> — marble, electric supply, water, working yard, pigment, araldite, feviquick, tinex, washing cloth etc.</p></div>
+    <div class="tc r" style="transition-delay:.16s"><div class="tc-badge">3</div><p class="tc-text"><strong>Design charges are extra</strong> and will be quoted separately based on the complexity and type of pattern or design required for the work.</p></div>
+    <div class="tc r" style="transition-delay:.04s"><div class="tc-badge">4</div><p class="tc-text">No taxes from contractor's side except <strong>TDS as per applicable Income Tax rules</strong>. No GST from contractor side on labour work.</p></div>
+    <div class="tc r" style="transition-delay:.12s"><div class="tc-badge">5</div><p class="tc-text"><strong>100% payment</strong> to be released every 15 days against each final bill submitted for work completed at site. No payment delays.</p></div>
+    <div class="tc r" style="transition-delay:.2s"><div class="tc-badge">6</div><p class="tc-text"><strong>Extra charges</strong> will apply for any work not covered in the original quotation. All extras to be agreed in writing before commencement.</p></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="cta-ov"></div>
+  <div class="cta-body r">
+    <h2 class="cta-title">Ready to Transform<br>Your <em>Floors &amp; Walls?</em></h2>
+    <p class="cta-sub">Call or WhatsApp for a free site visit and detailed quotation. Residential, commercial and builder projects across Gurugram.</p>
+    <div class="cta-acts">
+      <a href="#contact" class="btn-white">Request a Quote</a>
+      <a href="tel:9024126010" class="btn-ow">📞 Call: 90241 26010</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECOND IMAGE STRIP -->
+<div class="fb-strip">
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=500&q=80&auto=format&fit=crop" alt="Marble interior"><div class="fb-label">Marble Interiors</div></div>
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&q=80&auto=format&fit=crop" alt="Tile flooring"><div class="fb-label">Tile Flooring</div></div>
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=500&q=80&auto=format&fit=crop" alt="Bathroom marble"><div class="fb-label">Bathroom Marble</div></div>
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=500&q=80&auto=format&fit=crop" alt="Granite bedroom"><div class="fb-label">Granite Bedroom</div></div>
+  <div class="fb-item"><img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=500&q=80&auto=format&fit=crop" alt="Kitchen stone"><div class="fb-label">Kitchen Stone</div></div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="cnt-grid">
+    <div class="cnt-info">
+      <div class="sec-hd r">
+        <div class="chip">Get In Touch</div>
+        <h2 class="sec-title">Contact <em>Us Today</em></h2>
+        <p class="sec-desc" style="text-align:left;margin-left:0;max-width:100%">Free site visit &amp; quotation anywhere in Gurugram. Call, WhatsApp or fill the form.</p>
+      </div>
+      <div class="ci r"><div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.08 6.08l1.29-1.29a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div><div class="ci-lbl">Mobile / WhatsApp</div><div class="ci-val">+91 90241 26010</div></div></div>
+      <div class="ci r" style="transition-delay:.1s"><div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-lbl">Office Address 1</div><div class="ci-val">H. No. 583, Basement, Sector 38,<br>Gurugram, Haryana — 122003</div></div></div>
+      <div class="ci r" style="transition-delay:.15s"><div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-lbl">Office Address 2</div><div class="ci-val">Ardee City, Gate No. 2, 1586, 3rd Floor,<br>Housing Board, Sector 52, Gurugram (HR)</div></div></div>
+      <div class="ci r" style="transition-delay:.2s"><div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="ci-lbl">Working Hours</div><div class="ci-val">Monday – Saturday, 8:00 AM – 7:00 PM</div></div></div>
+    </div>
+    <div class="cnt-form-box r rr">
+      <div class="cf-title">Send an Enquiry</div>
+      <div class="cf-sub">WhatsApp opens with your details — just tap Send to complete your enquiry.</div>
+      <form class="c-form" id="enquiryForm">
+        <input type="text" name="company" id="company" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
+        <div class="f-row">
+          <div class="fg"><label class="fl">Your Name *</label><input type="text" class="fi" id="f-name" placeholder="Ramesh Kumar" required></div>
+          <div class="fg"><label class="fl">Mobile Number *</label><input type="tel" class="fi" id="f-mobile" placeholder="+91 98XXX XXXXX" required></div>
+        </div>
+        <div class="fg"><label class="fl">Site Address</label><input type="text" class="fi" id="f-address" placeholder="Sector, Colony, Gurugram"></div>
+        <div class="fg">
+          <label class="fl">Type of Work</label>
+          <select class="fs" id="f-worktype">
+            <option value="">Select work type...</option>
+            <option>Italian Marble Flooring</option>
+            <option>Granite Flooring</option>
+            <option>Granite Cladding</option>
+            <option>Wall Tiles (12×24″)</option>
+            <option>Wall Tiles (24×48″)</option>
+            <option>Wall Tiles (48×96″)</option>
+            <option>Floor Tiles 2×2′</option>
+            <option>Staircase Granite</option>
+            <option>Stone Cladding</option>
+            <option>Edge Polish / Finishing</option>
+            <option>Epoxy Grouting</option>
+            <option>Multiple Works — Site Visit Required</option>
+          </select>
+        </div>
+        <div class="fg"><label class="fl">Approx. Area (Sq. Ft.)</label><input type="text" class="fi" id="f-area" placeholder="e.g. 1500 sft"></div>
+        <div class="fg"><label class="fl">Project Details</label><textarea class="ft" id="f-details" placeholder="Describe your requirement — new construction, renovation, marble type, timeline, etc."></textarea></div>
+        <button class="f-btn" id="submitBtn" type="submit">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Send on WhatsApp
+        </button>
+        <p id="fStatus"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <a href="#" class="foot-brand">
+        <div class="foot-logo">
+          <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="7" fill="none" stroke="white" stroke-width="2"/>
+            <circle cx="18" cy="18" r="3" fill="#F9DCC4"/>
+            <path d="M18 11 Q22 14 18 18 Q14 14 18 11Z" fill="#F4A261"/>
+            <path d="M11 18 Q14 14 18 18 Q14 22 11 18Z" fill="#F4A261"/>
+            <path d="M18 25 Q14 22 18 18 Q22 22 18 25Z" fill="#F4A261"/>
+            <path d="M25 18 Q22 22 18 18 Q22 14 25 18Z" fill="#F4A261"/>
+          </svg>
+        </div>
+        <div><div class="foot-co">Jai Mata Di Interior Works</div><div class="foot-city">Gurugram, Haryana</div></div>
+      </a>
+      <p class="foot-desc">All types of interior stone works — Italian marble, granite, tiles, cladding and finishing. Serving Gurugram and all of Haryana with skilled, experienced labour teams.</p>
+      <a href="tel:9024126010" class="foot-tel">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.08 6.08l1.29-1.29a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +91 90241 26010
+      </a>
+    </div>
+    <div>
+      <div class="fcol-title">Our Services</div>
+      <ul class="flinks">
+        <li><a href="#services">Italian Marble</a></li>
+        <li><a href="#services">Granite Works</a></li>
+        <li><a href="#services">Wall &amp; Floor Tiles</a></li>
+        <li><a href="#services">Stone Cladding</a></li>
+        <li><a href="#services">Epoxy Grouting</a></li>
+        <li><a href="#services">Edge Polish &amp; Finishing</a></li>
+        <li><a href="#services">Staircase Granite</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fcol-title">Quick Links</div>
+      <ul class="flinks">
+        <li><a href="#gallery">Our Gallery</a></li>
+        <li><a href="#quot">Rate / Quotation</a></li>
+        <li><a href="#why">Why Choose Us</a></li>
+        <li><a href="#terms">Terms &amp; Conditions</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact">Get a Free Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fcol-title">Our Offices</div>
+      <ul class="flinks">
+        <li><a href="#">H. No. 583, Basement</a></li>
+        <li><a href="#">Sector 38, Gurugram</a></li>
+        <li><a href="#">Haryana — 122003</a></li>
+        <li><a href="#" style="margin-top:.65rem;display:block">Ardee City, Gate No. 2</a></li>
+        <li><a href="#">1586, 3rd Floor, Sec-52</a></li>
+        <li><a href="#">Housing Board, Gurugram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div>© 2026 <span>Jai Mata Di Interior Works</span>. All Rights Reserved. Gurugram, Haryana.</div>
+    <div>MOB: +91 90241 26010 &nbsp;·&nbsp; All types of interior stone works</div>
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.r').forEach(el => ro.observe(el));
+
+// Hero bg zoom-in on load
+window.addEventListener('load', () => {
+  const bg = document.getElementById('heroBg');
+  if (bg) bg.classList.add('loaded');
+});
+
+// Nav shrink on scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Quotation tab switch
+function switchTab(btn, id) {
+  document.querySelectorAll('.qt').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.q-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+
+// WhatsApp form submission
+const WA = '919024126010';
+document.getElementById('enquiryForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const name     = document.getElementById('f-name').value.trim();
+  const mobile   = document.getElementById('f-mobile').value.trim();
+  const address  = document.getElementById('f-address').value.trim();
+  const workType = document.getElementById('f-worktype').value;
+  const area     = document.getElementById('f-area').value.trim();
+  const details  = document.getElementById('f-details').value.trim();
+  const st       = document.getElementById('fStatus');
+
+  if (!name || !mobile) {
+    st.textContent = 'Please fill in your Name and Mobile Number.';
+    st.style.cssText = 'display:block;color:#b3261e;background:#fdf0f0;padding:.7rem 1rem;border-radius:8px;margin-top:.25rem;font-size:.79rem';
+    return;
+  }
+
+  const msg =
+    `🏠 *New Enquiry — Jai Mata Di Interior Works*\n\n` +
+    `👤 *Name:* ${name}\n` +
+    `📱 *Mobile:* ${mobile}\n` +
+    `📍 *Site Address:* ${address  || '—'}\n` +
+    `🔧 *Work Type:* ${workType || '—'}\n` +
+    `📐 *Approx. Area:* ${area     || '—'}\n\n` +
+    `📝 *Project Details:*\n${details || '—'}`;
+
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
+
+  const btn = document.getElementById('submitBtn');
+  btn.style.background = '#25D366';
+  st.textContent = 'WhatsApp is opening with your details filled in. Just tap Send to complete your enquiry.';
+  st.style.cssText = 'display:block;color:#1a6e35;background:#f0faf2;padding:.7rem 1rem;border-radius:8px;margin-top:.25rem;font-size:.79rem';
+
+  setTimeout(() => {
+    btn.style.background = '';
+    this.reset();
+    st.style.display = 'none';
+  }, 4000);
+});
+</script>
+</body>
+</html>
